@@ -17,7 +17,20 @@ body {
     font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.board-row::after{
+  clear: both;
+  content:'';
+  display: block;
+}
+
+.square{
+  height:34px;
+  width:32px;
+  float:left;
+  line-height:34px;
+  text-align:center;
+  border: 1px solid #999;
+  background: #fff;
+  margin-right:-1px;
+  margin-bottom: -1px;
 }
