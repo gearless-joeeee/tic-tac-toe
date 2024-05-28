@@ -4,7 +4,8 @@ export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null))
 
   const clickHandler = (index) => {
-
+    const curentSquare = squares[index]
+    if(!(curentSquare === null)) return 
     const filledSquares = squares.filter(square => (square === 'X' || square === 'O'))
     const fillNumber = filledSquares.length
     const nextFill = fillNumber % 2 === 0 ? 'X' : 'O'
