@@ -43,11 +43,11 @@ function calculateBoardState(squares){
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null))
 
-  const status = calculateBoardState(squares)
+  const boardStatus = calculateBoardState(squares)
 
   const clickHandler = (index) => {
     const curentSquare = squares[index]
-    if(!(curentSquare === null)) return 
+    if(!(curentSquare === null) || boardStatus.includes('won')) return 
     const nextFill = getNextFill(squares)
     const newSquares = Array.prototype.slice.call(squares)
     newSquares[index] = nextFill
@@ -55,7 +55,7 @@ export default function Board() {
   }
   return (
     <>
-      <div>{status}</div>
+      <div>{boardStatus}</div>
       <div className="board-row">
         <Square value={squares[0]} index={0} handleClick={clickHandler}/>
         <Square value={squares[1]} index={1} handleClick={clickHandler}/>
