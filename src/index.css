@@ -34,3 +34,33 @@ body {
   margin-right:-1px;
   margin-bottom: -1px;
 }
+.board-state{
+  margin-bottom: 10px
+}
+
+
+.game{
+  display: flex;
+  gap: 20px;
+}
+
+.history-wrapper{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  jusitfy-content:flex-start;
+}
+
+.history-title{
+  margin:0;
+}
+
+.history-list{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-align:start;
+}
+.history-item{
+  font-size:14px;
+}
