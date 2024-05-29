@@ -10,7 +10,7 @@ export function getNextFill(squares){
 
 function getBoardState(winner, squares) {
   if(winner){
-    return `Winner is ${winner}`
+    return `Winner is: ${winner}`
   } else {
     const filledSquares = squares.filter(square => (square === 'X' || square === 'O'))
     const fillNumber = filledSquares.length

@@ -34,7 +34,7 @@ body {
   margin-right:-1px;
   margin-bottom: -1px;
 }
-.board-state{
+.board-state, .history-title{
   margin-bottom: 10px
 }
 
@@ -51,9 +51,11 @@ body {
   jusitfy-content:flex-start;
 }
 
-.history-title{
+h4{
   margin:0;
 }
+
+
 
 .history-list{
   margin:0;
